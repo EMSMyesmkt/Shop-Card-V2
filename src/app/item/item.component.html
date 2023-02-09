@@ -1,0 +1,13 @@
+<div>
+  <td class="item" *ngIf="item">
+    <strong>{{ item.name }} </strong>
+    <br>
+    Preço: <input type="number" [(ngModel)]="item.price" />
+    <br>
+    Qty: <input type="number" [(ngModel)]="item.qty" />
+    <br />
+    <button id="btn-removeBasket" (click)="removeBasket()">Remover</button>
+    <button id="btn-updatePrice" (click)="updatePrice()">Adicionar</button>
+    <button id="btn-removeList" (click)="removeFromList()">x</button>
+  </td>
+</div>
